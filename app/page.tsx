@@ -721,7 +721,7 @@ export default function Portfolio() {
                             variant="outline"
                             onClick={() =>
                               window.open(
-                                "https://github.com/01larrydev",
+                                "https://01larrydev.github.io/web-site_restaurant/",
                                 "_blank"
                               )
                             }
