@@ -53,9 +53,9 @@ export default function Portfolio() {
             clearInterval(timer2);
             setShowCursor2(false);
           }
-        }, 80); // Slightly faster for mobile
+        }, 70); 
       }
-    }, 80); // Slightly faster for mobile
+    }, 70); 
 
     return () => {
       clearInterval(timer1);
@@ -196,7 +196,7 @@ export default function Portfolio() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
-            <div className="flex flex-col items-center justify-center h-full space-y-8 px-4">
+            <div className="flex flex-col items-center h-full space-y-8 px-4">
               {["about", "experience", "projects", "contact"].map(
                 (section, index) => (
                   <motion.button
@@ -477,6 +477,8 @@ export default function Portfolio() {
                             B.Sc. Bachelors Degree
                             <br />
                             D.T.Superior Degree
+                            <br />
+                            Licence Degree
                           </p>
                         </CardContent>
                       </Card>
@@ -530,12 +532,12 @@ export default function Portfolio() {
                       </h3>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                         {[
-                          { skill: "HTML", level: "Experienced" },
-                          { skill: "CSS", level: "Experienced" },
-                          { skill: "SASS", level: "Intermediate" },
-                          { skill: "JavaScript", level: "Intermediate" },
+                          { skill: "HTML/CSS", level: "Experienced" },
+                          { skill: "Tailwind", level: "Experienced" },
+                          { skill: "Typescript", level: "Intermediate" },
+                          { skill: "JavaScript", level: "Experienced" },
                           { skill: "React JS", level: "Experienced" },
-                          { skill: "PHP", level: "Intermediate" },
+                          { skill: "Next JS", level: "Intermediate" },
                         ].map((item, index) => (
                           <motion.div
                             key={index}
@@ -587,10 +589,10 @@ export default function Portfolio() {
                       </h3>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                         {[
-                          { skill: "PostgreSQL", level: "Intermediate" },
-                          { skill: "Node JS", level: "Basic" },
+                          { skill: "PostgreSQL", level: "Experienced" },
+                          { skill: "Node JS", level: "Intermediate" },
                           { skill: "Laravel", level: "Intermediate" },
-                          { skill: "Git", level: "Intermediate" },
+                          { skill: "Express JS", level: "Intermediate" },
                           { skill: "Wordpress", level: "Outil CMS" },
                           { skill: "Prestashop", level: "Outil CMS" },
                         ].map((item, index) => (
@@ -653,14 +655,21 @@ export default function Portfolio() {
                 {
                   title: "Web Site Restaurant",
                   image: "/food_project.png",
+                  githubUrl:
+                    "https://github.com/01larrydev/web-site_restaurant",
+                  liveUrl: "https://01larrydev.github.io/web-site_restaurant/",
                 },
                 {
-                  title: "Project Two",
-                  image: "/placeholder.svg?height=200&width=300",
+                  title: "Prestashop Web Site",
+                  image: "/site-project.png",
+                  githubUrl: "https://github.com/01larrydev/project-two",
+                  liveUrl: "https://www.dimasport.fr/fr/",
                 },
                 {
-                  title: "Project Three",
+                  title: "Wordpress Web Site",
                   image: "/placeholder.svg?height=200&width=300",
+                  githubUrl: "https://github.com/01larrydev/project-three",
+                  liveUrl: "https://01larrydev.github.io/project-three/",
                 },
               ].map((project, index) => (
                 <motion.div
@@ -702,10 +711,7 @@ export default function Portfolio() {
                           <Button
                             variant="outline"
                             onClick={() =>
-                              window.open(
-                                "https://github.com/01larrydev",
-                                "_blank"
-                              )
+                              window.open(project.githubUrl, "_blank")
                             }
                             className="w-full sm:w-auto min-h-[44px] text-sm"
                           >
@@ -720,10 +726,7 @@ export default function Portfolio() {
                           <Button
                             variant="outline"
                             onClick={() =>
-                              window.open(
-                                "https://01larrydev.github.io/web-site_restaurant/",
-                                "_blank"
-                              )
+                              window.open(project.liveUrl, "_blank")
                             }
                             className="w-full sm:w-auto min-h-[44px] text-sm"
                           >
