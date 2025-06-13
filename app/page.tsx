@@ -53,9 +53,9 @@ export default function Portfolio() {
             clearInterval(timer2);
             setShowCursor2(false);
           }
-        }, 70); 
+        }, 80); 
       }
-    }, 70); 
+    }, 80); 
 
     return () => {
       clearInterval(timer1);
