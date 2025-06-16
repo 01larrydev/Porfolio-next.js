@@ -53,9 +53,9 @@ export default function Portfolio() {
             clearInterval(timer2);
             setShowCursor2(false);
           }
-        }, 80); 
+        }, 80);
       }
-    }, 80); 
+    }, 80);
 
     return () => {
       clearInterval(timer1);
@@ -442,7 +442,7 @@ export default function Portfolio() {
                             Experience
                           </h3>
                           <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
-                            2+ years
+                            3+ years
                             <br />
                             Frontend/Backend Development
                           </p>
@@ -487,7 +487,7 @@ export default function Portfolio() {
 
                   <div className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm sm:text-base">
                     <p>
-                      I am a developer specialized in ReactJS and PHP. I have a
+                      I am a developer specialized in NextJS and PHP. I have a
                       passion for creating effective and innovative software
                       solutions. My goal is to create applications that not only
                       work well, but are also pleasant to use. I have a solid
@@ -589,7 +589,7 @@ export default function Portfolio() {
                       </h3>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                         {[
-                          { skill: "PostgreSQL", level: "Experienced" },
+                          { skill: "bdd:SQL/NoSQL", level: "Experienced" },
                           { skill: "Node JS", level: "Intermediate" },
                           { skill: "Laravel", level: "Intermediate" },
                           { skill: "Express JS", level: "Intermediate" },
@@ -842,7 +842,7 @@ export default function Portfolio() {
               ))}
             </div>
             <p className="text-center text-gray-600 dark:text-gray-400 text-xs sm:text-sm leading-relaxed">
-              Copyright © 2024 Larry Roots. All Rights Reserved.
+              Copyright © 2024 Larry Dev. All Rights Reserved.
             </p>
           </div>
         </footer>
